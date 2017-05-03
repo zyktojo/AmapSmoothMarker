@@ -1,4 +1,8 @@
 # AmapSmoothMarker
+To achieve the smooth moving effect of multiple vehicles~
+
+Tech solve link：http://blog.csdn.net/zyktojo/article/details/62891606
+
 打开滴滴打车APP，会发现地图上的车辆显示的十分形象，车辆会在路上平滑的加减速，转向停车~
 
 有种即时战略的感觉，看起来挺有趣：
