@@ -67,7 +67,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //清空地图覆盖物
-                aMap.clear();
+                if (smoothMarkers != null) {//清空动态marker
+                    for (int i = 0; i < smoothMarkers.size(); i++) {
+                        smoothMarkers.get(i).destroy();
+                    }
+                }
                 //清除旧集合
                 if (showMarks == null) {
                     showMarks = new ArrayList<Marker>();
@@ -101,7 +105,19 @@ public class MainActivity extends AppCompatActivity {
         run.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                aMap.clear();//清空地图覆盖物
+                if (smoothMarkers != null) {//清空动态marker
+                    for (int i = 0; i < smoothMarkers.size(); i++) {
+                        smoothMarkers.get(i).destroy();
+                    }
+                }
+                //清除旧集合
+                if (showMarks == null) {
+                    showMarks = new ArrayList<Marker>();
+                }
+                //清除静态marker
+                for (int j = 0; j < showMarks.size(); j++) {
+                    showMarks.get(j).remove();
+                }
                 smoothMarkers = null;//清空旧数据
                 smoothMarkers = new ArrayList<SmoothMoveMarker>();
                 BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.car_up);
@@ -120,9 +136,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData() {
         //出发地
-        LatLng car1 = new LatLng(39.902138,116.391415 );
-        LatLng car2 = new LatLng(39.935184,116.328587 );
-        LatLng car3 = new LatLng(39.987814,116.488232 );
+        LatLng car1 = new LatLng(39.902138, 116.391415);
+        LatLng car2 = new LatLng(39.935184, 116.328587);
+        LatLng car3 = new LatLng(39.987814, 116.488232);
         //出发地坐标集合
         carsLatLng = new ArrayList<>();
         carsLatLng.add(car1);
@@ -130,9 +146,9 @@ public class MainActivity extends AppCompatActivity {
         carsLatLng.add(car3);
 
         //目的地
-        LatLng go1 = new LatLng(39.96782,116.403775);
-        LatLng go2 = new LatLng(39.891225,116.322235);
-        LatLng go3 = new LatLng(39.883322,116.415619 );
+        LatLng go1 = new LatLng(39.96782, 116.403775);
+        LatLng go2 = new LatLng(39.891225, 116.322235);
+        LatLng go3 = new LatLng(39.883322, 116.415619);
         //目的地坐标集合
         goLatLng = new ArrayList<>();
         goLatLng.add(go1);
