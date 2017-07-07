@@ -2,7 +2,7 @@
 To achieve the smooth moving effect of multiple vehicles~
 
 Tech solve link：http://blog.csdn.net/zyktojo/article/details/62891606
-博客详解链接：http://blog.csdn.net/zyktojo/article/details/62891606
+/n博客详解链接：http://blog.csdn.net/zyktojo/article/details/62891606
 
 打开滴滴打车APP，会发现地图上的车辆显示的十分形象，车辆会在路上平滑的加减速，转向停车~
 
