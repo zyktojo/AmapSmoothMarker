@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AmapSmoothMarker.iml" filepath="$PROJECT_DIR$/AmapSmoothMarker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AmapSmoothMarker.iml" filepath="$PROJECT_DIR$/AmapSmoothMarker.iml" />
+      <module fileurl="file://C:\Users\mo\Documents\GitHub\AmapSmoothMarker\AmapSmoothMarker.iml" filepath="C:\Users\mo\Documents\GitHub\AmapSmoothMarker\AmapSmoothMarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\mo\Documents\GitHub\AmapSmoothMarker\app\app.iml" filepath="C:\Users\mo\Documents\GitHub\AmapSmoothMarker\app\app.iml" />
     </modules>
   </component>
 </project>
